@@ -5,7 +5,7 @@ from json import JSONDecodeError, JSONEncoder
 jsonString = '{"a": "apple", "b": "bear", "c": "cat"}'
 #jsonString = '{"a": "apple", "b": "bear", "c": "cat",}' #this works as Dictionary, but not as JSON
 try:
-    json.loads(jsonString)
+    json.loads(jsonString) #loads(): to parse a JSON string into a Python object
 except JSONDecodeError:
     print('Could not parse JSON!')
 
